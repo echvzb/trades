@@ -1,0 +1,133 @@
+:root{
+    --primary: #4a148c;
+    --primary-l : #7c43bd;
+    --secondary: #d50000;
+    --bg-primary: linear-gradient(145deg, #43127e, #4f1596); 
+}
+body{
+    padding: 0;
+}
+nav{
+    background: var(--bg-primary);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+strong{
+    color: #d50000;
+}
+.navbar-brand{
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+}
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.nav-link.active{
+    color: #ff5131 !important;
+}
+a{
+    color: var(--primary);
+}
+a:hover{
+    color: var(--primary-l);
+}
+#login>div{
+    width: 100vw;
+
+}
+.btn-red{
+    border: 2px solid transparent;
+    background: linear-gradient(145deg, #c00000, #e40000);
+    color: #fff;
+}
+.btn-red:hover{
+    border-color: var(--secondary);
+    color: var(--secondary);
+    background: transparent;
+}
+.cardC{
+	height: 12rem;
+	display:flex;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.cardC:hover{
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	transform: scale(1.01);
+}
+.cardC, .img, .a-container, .tag, .text, .title{
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	
+}
+.cardC:hover > .text > .a-container {
+	background: #4a148c;
+}
+.cardC:hover > .text > .a-container > .tag{
+	transform: translatex(-100%);
+	border-radius: 0;
+	background: #d50000;
+}
+.cardC:hover > a > .img{
+	border-color: #4a148c;
+	transform: scale(1.05);
+}
+.cardC:hover > .text > .main-text > .title{
+	color: #d50000;
+}
+.cardC:hover > .text{
+	border-radius: 0 0 16px 0;
+	border-bottom: 10px solid #4a148c;
+}
+.a-container{
+	text-align:right;
+	background: #d50000;
+	border-radius: 0 16px 16px 0;
+	
+}
+a {
+    text-decoration:none;
+	display: inline-block;
+    
+}
+.title{
+	font-size: 1.4rem;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+	color: #4a148c;
+	font-weight: 600;
+}
+.main-text{
+	margin: 0 1rem;
+}
+.date{
+	font-size:0.9rem;
+}
+.tag{
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	text-align:right;
+	background: #4a148c;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	box-sizing: border-box;
+	border-radius: 16px;
+}
+.img, .cardC{
+	border-radius: 16px;	
+}
+.img{
+	border: 3px solid #d50000;
+	box-sizing:border-box;
+	height:12rem;
+	width: 12rem;
+	background: #222;
+	border-radius: 16px 0 0 16px;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.price{
+	font-size:1.2rem;
+	margin-bottom: 1.5rem;
+}
